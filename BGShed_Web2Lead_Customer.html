@@ -40,22 +40,25 @@
       
       <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
       
-      Enquiry Source:<select  id="00NIT00000M0Y2o" name="00NIT00000M0Y2o" title="Enquiry Source"><option value="">--None--</option><option value="Repeat Customer">Repeat Customer</option>
-      <option value="Referral">Referral</option>
-      <option value="Adwords">Adwords</option>
-      <option value="Website">Website</option>
-      <option value="Signage">Signage</option>
-      <option value="Radio">Radio</option>
-      <option value="Yellow Pages">Yellow Pages</option>
-      <option value="Trading Post">Trading Post</option>
-      <option value="Home Improvements">Home Improvements</option>
-      <option value="E Bay">E Bay</option>
-      <option value="Other">Other</option>
+      <label for="lead_source">Enquiry Source</label>
+      <select  id="lead_source" name="lead_source">
+        <option value="">--None--</option>
+        <option value="Adwords">Adwords</option>
+        <option value="E Bay">E Bay</option>
+        <option value="Home Improvements">Home Improvements</option>
+        <option value="Radio">Radio</option>
+        <option value="Referral">Referral</option>
+        <option value="Repeat Customer">Repeat Customer</option>
+        <option value="SIgnage">SIgnage</option>
+        <option value="Trading Post">Trading Post</option>
+        <option value="Website">Website</option>
+        <option value="Yellow Pages">Yellow Pages</option>
+        <option value="Other">Other</option>
       </select><br>
       
-      Street:<input  id="00NIT00000M0Y2t" maxlength="255" name="00NIT00000M0Y2t" size="20" type="text" /><br>
-      
-      <label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+       Street:<input  id="00NIT00000M0Y2t" maxlength="255" name="00NIT00000M0Y2t" size="20" type="text" /><br>
+
+      Suburb/Town:<input  id="00NIT00000M0Y2y" maxlength="255" name="00NIT00000M0Y2y" size="20" type="text" /><br>
       
       Interested in:<select  id="00NIT00000M0Yjw" multiple="multiple" name="00NIT00000M0Yjw" title="Interested in"><option value="Roof Types - Gable Roof Sheds">Roof Types - Gable Roof Sheds</option>
       <option value="Roof Types - Skillion Roof Garages">Roof Types - Skillion Roof Garages</option>
@@ -82,11 +85,85 @@
       <option value="Carports &amp; Verandahs - Firmlok Hip Roof Attached">Carports &amp; Verandahs - Firmlok Hip Roof Attached</option>
       </select><br>
       
-      Length:<input  id="00NIT00000M0Y3N" name="00NIT00000M0Y3N" size="20" type="text" /><br>
+      <label for="00NIT00000M0Y3N">Length:</label>
+      <select  id="00NIT00000M0Y3N" name="00NIT00000M0Y3N">
+          <option value="">--None--</option>
+          <option value="4">4</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5</option>
+          <option value="5.5">5.5</option>
+          <option value="6">6.0</option>
+          <option value="6.5">6.5</option>
+          <option value="7">7.0</option>
+          <option value="7.5">7.5</option>
+          <option value="8">8.0</option>
+          <option value="8.5">8.5</option>
+          <option value="9">9.0</option>
+          <option value="9.5">9.5</option>
+          <option value="10">10.0</option>
+          <option value="11">11.0</option>
+          <option value="12">12.0</option>
+          <option value="13">13.0</option>
+          <option value="14">14.0</option>
+          <option value="15">15.0</option>
+          <option value="16">16.0</option>
+          <option value="17">17.0</option>
+          <option value="18">18.0</option>
+          <option value="20">20.0</option>
+          <option value="22">22.0</option>
+          <option value="22">22.0</option>
+          <option value="24">24.0</option>
+          <option value="26">26.0</option>
+          <option value="28">28.0</option>
+          <option value="30">30.0</option>
+          <option value="36">36.0</option>
+          <option value="42">42.0</option>
+          <option value="48">48.0</option>
+          <option value="54">54.0</option>
+          <option value="60">60.0</option>
+      </select><br>
       
-      Width:<input  id="00NIT00000M0Y3S" name="00NIT00000M0Y3S" size="20" type="text" /><br>
+       <label for="00NIT00000M0Y3S">Width:</label>
+        <select  id="00NIT00000M0Y3S" name="00NIT00000M0Y3S">
+          <option value="">--None--</option>
+          <option value="3">3</option>
+          <option value="3.5">3.5</option>
+          <option value="4">4</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5.0</option>
+          <option value="5.5">5.5</option>
+          <option value="6">6.0</option>
+          <option value="6.5">6.5</option>
+          <option value="7">7.0</option>
+          <option value="7.5">7.5</option>
+          <option value="8">8.0</option>
+          <option value="8.5">8.5</option>
+          <option value="9">9.0</option>
+          <option value="9.5">9.5</option>
+          <option value="10">10.0</option>
+          <option value="11">11.0</option>
+          <option value="12">12.0</option>
+          <option value="13">13.0</option>
+          <option value="14">14.0</option>
+          <option value="15">15.0</option>
+          <option value="16">16.0</option>
+          <option value="17">17.0</option>
+          <option value="18">18.0</option>
+      </select><br>
       
-      Height:<input  id="00NIT00000M0Y3X" name="00NIT00000M0Y3X" size="20" type="text" /><br>
+       <label for="00NIT00000M0Y3X">Height:</label>
+        <select  id="00NIT00000M0Y3X" name="00NIT00000M0Y3X">
+          <option value="">--None--</option>
+          <option value="2.4">2.4</option>
+          <option value="2.7">2.7</option>
+          <option value="3">3</option>
+          <option value="3.5">3.5</option>
+          <option value="4">4</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5.0</option>
+          <option value="5.5">5.5</option>
+          <option value="6">6.0</option>
+      </select><br>
       
       Details:<textarea  id="00NIT00000M0Y3c" name="00NIT00000M0Y3c" rows="3" type="text" wrap="soft"></textarea><br>
       
