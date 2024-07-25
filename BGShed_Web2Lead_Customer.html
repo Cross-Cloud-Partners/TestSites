@@ -16,47 +16,83 @@
     <br />    
     <br />
     <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-    <!--  If necessary, please modify the charset parameter to specify the        -->
-    <!--  character set of your HTML page.                                        -->
-    <!--  ----------------------------------------------------------------------  -->
-    
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-    
-    <!--  ----------------------------------------------------------------------  -->
     <!--  NOTE: Please add the following <FORM> element to your page.             -->
     <!--  ----------------------------------------------------------------------  -->
     
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIT0000035XGb" method="POST">
     
-    <input type=hidden name="oid" value="00DIT0000035XGb">
-    <input type=hidden name="retURL" value="https://www.bgsheds.com.au/">
-    
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-    <!--  these lines if you wish to test in debug mode.                          -->
-    <!--  <input type="hidden" name="debug" value=1>                              -->
-    <!--  <input type="hidden" name="debugEmail"                                  -->
-    <!--  value="support@crosscloudpartners.com">                                 -->
-    <!--  ----------------------------------------------------------------------  -->
-    
-    <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-    
-    <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-    
-    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-    
-    <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-    
-    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-    
-    <label for="description">Description</label><textarea name="description"></textarea><br>
-    
-    <input type="submit" name="submit">
+      <input type=hidden name="oid" value="00DIT0000035XGb">
+      <input type=hidden name="retURL" value="https://www.bgsheds.com.au/">
+      
+      <!--  ----------------------------------------------------------------------  -->
+      <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+      <!--  these lines if you wish to test in debug mode.                          -->
+      <!--  <input type="hidden" name="debug" value=1>                              -->
+      <!--  <input type="hidden" name="debugEmail"                                  -->
+      <!--  value="support@crosscloudpartners.com">                                 -->
+      <!--  ----------------------------------------------------------------------  -->
+      
+      <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+      
+      <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+      
+      <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+      
+      <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+      
+      Enquiry Source:<select  id="00NIT00000M0Y2o" name="00NIT00000M0Y2o" title="Enquiry Source"><option value="">--None--</option><option value="Repeat Customer">Repeat Customer</option>
+      <option value="Referral">Referral</option>
+      <option value="Adwords">Adwords</option>
+      <option value="Website">Website</option>
+      <option value="Signage">Signage</option>
+      <option value="Radio">Radio</option>
+      <option value="Yellow Pages">Yellow Pages</option>
+      <option value="Trading Post">Trading Post</option>
+      <option value="Home Improvements">Home Improvements</option>
+      <option value="E Bay">E Bay</option>
+      <option value="Other">Other</option>
+      </select><br>
+      
+      Street:<input  id="00NIT00000M0Y2t" maxlength="255" name="00NIT00000M0Y2t" size="20" type="text" /><br>
+      
+      <label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+      
+      Interested in:<select  id="00NIT00000M0Yjw" multiple="multiple" name="00NIT00000M0Yjw" title="Interested in"><option value="Roof Types - Gable Roof Sheds">Roof Types - Gable Roof Sheds</option>
+      <option value="Roof Types - Skillion Roof Garages">Roof Types - Skillion Roof Garages</option>
+      <option value="Roof Types - Split Gable Roof">Roof Types - Split Gable Roof</option>
+      <option value="Roof Types - Split Skillion Roof">Roof Types - Split Skillion Roof</option>
+      <option value="Garages &amp; Sheds - Single Garage">Garages &amp; Sheds - Single Garage</option>
+      <option value="Garages &amp; Sheds - Double Garages">Garages &amp; Sheds - Double Garages</option>
+      <option value="Garages &amp; Sheds - Triple Garages">Garages &amp; Sheds - Triple Garages</option>
+      <option value="Garages &amp; Sheds - Lean Tos">Garages &amp; Sheds - Lean Tos</option>
+      <option value="Garages &amp; Sheds - Garaports">Garages &amp; Sheds - Garaports</option>
+      <option value="Barns - American Barn">Barns - American Barn</option>
+      <option value="Barns - Aussie Barn">Barns - Aussie Barn</option>
+      <option value="Barns - Machinery Sheds">Barns - Machinery Sheds</option>
+      <option value="Barns - School Sheds">Barns - School Sheds</option>
+      <option value="Barns - Sun Cover Sheds">Barns - Sun Cover Sheds</option>
+      <option value="Barns - Large Sheds">Barns - Large Sheds</option>
+      <option value="Carports &amp; Verandahs - Firmlok Skillion Roof Freestanding">Carports &amp; Verandahs - Firmlok Skillion Roof Freestanding</option>
+      <option value="Carports &amp; Verandahs - Firmlok Skillion Roof Attached">Carports &amp; Verandahs - Firmlok Skillion Roof Attached</option>
+      <option value="Carports &amp; Verandahs - Firmlok Gable Roof Freestanding">Carports &amp; Verandahs - Firmlok Gable Roof Freestanding</option>
+      <option value="Carports &amp; Verandahs - Firmlok Gable Roof Attached">Carports &amp; Verandahs - Firmlok Gable Roof Attached</option>
+      <option value="Carports &amp; Verandahs - Firmlok Dutch Roof Freestanding">Carports &amp; Verandahs - Firmlok Dutch Roof Freestanding</option>
+      <option value="Carports &amp; Verandahs - Firmlok Dutch Gable Roof Attached">Carports &amp; Verandahs - Firmlok Dutch Gable Roof Attached</option>
+      <option value="Carports &amp; Verandahs - Firmlok Hip Roof Freestanding">Carports &amp; Verandahs - Firmlok Hip Roof Freestanding</option>
+      <option value="Carports &amp; Verandahs - Firmlok Hip Roof Attached">Carports &amp; Verandahs - Firmlok Hip Roof Attached</option>
+      </select><br>
+      
+      Length:<input  id="00NIT00000M0Y3N" name="00NIT00000M0Y3N" size="20" type="text" /><br>
+      
+      Width:<input  id="00NIT00000M0Y3S" name="00NIT00000M0Y3S" size="20" type="text" /><br>
+      
+      Height:<input  id="00NIT00000M0Y3X" name="00NIT00000M0Y3X" size="20" type="text" /><br>
+      
+      Details:<textarea  id="00NIT00000M0Y3c" name="00NIT00000M0Y3c" rows="3" type="text" wrap="soft"></textarea><br>
+      
+      <input type="submit" name="submit">
     
     </form>
-
-
 
 
 </body>
