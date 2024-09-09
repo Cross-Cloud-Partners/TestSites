@@ -1,0 +1,109 @@
+<html>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+<head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+</head>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<body>
+<style>
+.green-form {
+  background-color: #e6f4e4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.green-form .form-group {
+  margin-bottom: 15px;
+}
+
+.green-form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2f8f20;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.green-form input[type="text"],
+.green-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2f8f20;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #333;
+}
+
+.green-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.green-form input[type="text"]:focus,
+.green-form textarea:focus {
+  outline: none;
+  border-color: #44c36e;
+}
+
+.green-form .submit-btn {
+  background-color: #44c36e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.green-form .submit-btn:hover {
+  background-color: #39a958;
+}
+</style>
+
+<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DF40000057F9m" method="POST">
+
+<input type=hidden name="oid" value="00DF40000057F9m">
+<input type=hidden name="retURL" value="https://www.bgsheds.com.au/">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="support@crosscloudpartners.com">                                 -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+Site Address (City):<input  id="0BCIT000000kCWQcity" maxlength="40" name="0BCIT000000kCWQcity" size="20" type="text" /><br>
+
+Site Address (Street):<textarea  id="0BCIT000000kCWPstreet" name="0BCIT000000kCWPstreet" type="text" wrap="soft"></textarea><br>
+
+<input type="submit" name="submit">
+</body>
+
+</form>
+</html>
