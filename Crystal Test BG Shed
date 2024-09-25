@@ -1,87 +1,67 @@
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { 
-    var response = document.getElementById("g-recaptcha-response"); 
-    if (response == null || response.value.trim() == "") {
-        var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
-        elems["ts"] = JSON.stringify(new Date().getTime());
-        document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); 
-    } 
- } 
- setInterval(timestamp, 500); 
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Styling */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #F0F8F5;
-        margin: 20px;
-    }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
 
-    form {
-        background-color: #ffffff;
-        padding: 20px;
-        border: 2px solid #56AE3A;
-        border-radius: 10px;
-        max-width: 400px;
-        margin: 0 auto;
-    }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-    label {
-        font-weight: bold;
-        color: #56AE3A;
-    }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
-    input[type="text"], input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-        border: 2px solid #56AE3A;
-        border-radius: 5px;
-    }
-
-    input[type="submit"] {
-        background-color: #56AE3A;
-        color: #ffffff;
-        cursor: pointer;
-        font-weight: bold;
-    }
-
-    input[type="submit"]:hover {
-        background-color: #469F31;
-    }
-
-    .g-recaptcha {
-        margin-top: 15px;
-    }
-</style>
-
-<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DF40000057F9m" method="POST">
-    <input type=hidden name='captcha_settings' value='{"keyname":"CCPTestKeyPair","fallback":"true","orgId":"00DF40000057F9m","ts":""}'>
-    <input type=hidden name="oid" value="00DF40000057F9m">
-    <input type=hidden name="retURL" value="http:///www.bgsheds.com.au/">
-
-    <label for="first_name">First Name</label>
-    <input id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-
-    <label for="last_name">Last Name</label>
-    <input id="last_name" maxlength="80" name="last_name" size="20" type="text" />
-
-    <label for="email">Email</label>
-    <input id="email" maxlength="80" name="email" size="20" type="text" />
-
-    <label for="company">Company</label>
-    <input id="company" maxlength="40" name="company" size="20" type="text" />
-
-    <label for="city">City</label>
-    <input id="city" maxlength="40" name="city" size="20" type="text" />
-
-    <label for="state">State/Province</label>
-    <input id="state" maxlength="20" name="state" size="20" type="text" />
-
-    <div class="g-recaptcha" data-sitekey="6LdmXU4qAAAAAAvD9FCbdUG241dQJLuOBwVRSx8F"></div>
-
-    <input type="submit" name="submit" value="Submit">
-</form>
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://your-salesforce-web-to-lead-url" method="POST" id="leadForm">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <!-- Hidden Enquiry Source field -->
+        <input type="hidden" id="enquiry_source" name="Enquiry_Source__c" value="Website">
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
