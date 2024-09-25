@@ -7,15 +7,7 @@
       <title>Web-to-Lead Form</title>
       <script src="https://www.google.com/recaptcha/api.js"></script>
       <script>
-         function timestamp() {
-             var response = document.getElementById("g-recaptcha-response");
-             if (response == null || response.value.trim() == "") {
-                 var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
-                 elems["ts"] = JSON.stringify(new Date().getTime());
-                 document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
-             }
-         }
-         setInterval(timestamp, 500);
+       function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
       </script>
       <style>
          body {
@@ -149,8 +141,8 @@
          <label for="state">State</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
          <label for="zip">Postal Code</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
          <label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
-         <div class="g-recaptcha" data-sitekey="your-recaptcha-site-key"></div>
-         <input type="submit" value="Submit">
+         <div class="g-recaptcha" data-sitekey="6LdmXU4qAAAAAAvD9FCbdUG241dQJLuOBwVRSx8F"></div><br>
+         <input type="submit" name="submit">
       </form>
    </body>
 </html>
