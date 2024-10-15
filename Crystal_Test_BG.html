@@ -9,6 +9,92 @@
         <script>
        function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
       </script>
+        <style>
+         body {
+         font-family: Arial, sans-serif;
+         background-color: #f4f4f4;
+         margin: 0;
+         padding: 20px;
+         }
+         form {
+         background-color: white;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         max-width: 600px;
+         margin: auto;
+         border: 2px solid #56AE3A;
+         }
+         h2 {
+         color: #56AE3A;
+         text-align: center;
+         }
+         label {
+         display: block;
+         margin-bottom: 8px;
+         font-weight: bold;
+         color: #333;
+         }
+         input[type="text"], input[type="email"],
+         select,
+         textarea {
+         width: 95%;
+         padding: 10px;
+         margin-bottom: 15px;
+         border: 2px solid #56AE3A;
+         border-radius: 8px;
+         font-size: 16px;
+         color: #333;
+         box-sizing: border-box;
+         }
+         input[type="text"]:focus,
+         select:focus,
+         textarea:focus {
+         border-color: #469A32;
+         outline: none;
+         }
+         input[type="submit"] {
+         background-color: #56AE3A;
+         color: white;
+         padding: 12px 20px;
+         border: none;
+         border-radius: 12px;
+         cursor: pointer;
+         font-size: 18px;
+         width: 100%;
+         }
+         input[type="submit"]:hover {
+         background-color: #469A32;
+         }
+         .hidden {
+         display: none;
+         }
+         /* Styling for Recaptcha */
+         .g-recaptcha {
+         margin-bottom: 15px;
+         }
+         /* Responsive */
+         @media (max-width: 600px) {
+         form {
+         padding: 15px;
+         }
+         input[type="submit"] {
+         padding: 10px;
+         }
+         }
+         .ctn {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+         }
+         .inp_ctn {
+            width: 50%;
+         }
+         .inp_ctn_3 {
+            width: calc(100%/3);
+         }
+      </style>
+
     </head>
     <body>
         <h2>Contact Us</h2>
@@ -44,6 +130,7 @@
                         <option value="Garages &amp; Sheds">Garages &amp; Sheds</option>
                         <option value="American Barn">American Barn</option>
                         <option value="Aussie Barn">Aussie Barn</option>
+                        <option value="Storage Shed">Storage Shed</option>
                         <option value="C Section Carport">C Section Carport</option>
                         <option value="Firmlok Carports &amp; Verandahs">Firmlok Carports &amp; Verandahs</option>
                     </select>
@@ -155,9 +242,8 @@
                         type="text" /><br>
                 </div>
             </div>
-            <div class="g-recaptcha" data-sitekey="6LeiNU0qAAAAAMBXbm-tyrmYnjRGigTV2JlTwpsA"></div><br>
+            <div class="g-recaptcha" data-sitekey="6LdmXU4qAAAAAAvD9FCbdUG241dQJLuOBwVRSx8F"></div><br>
             <input type="submit" name="submit">
         </form>
     </body>
 </html>
-
