@@ -9,11 +9,13 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+            color: #333;
         }
-<input type="hidden" id="lead_source" name="lead_source" value="Web" />
+
         /* Form Wrapper Styling */
         .form-wrapper {
-            background-image: url('https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXa9LNZBGAB%2FXKZPwpGw72y0Gitw1Z8K9nVFELSIhzrKz1AyZICfue5fMpjV54%2BD5L6prL7im3UsgKkACEJo30V7ELcZWoj0rB0Mly8OzzWVIl7SbZGFT3n%2FwYTrwi9P5I48MuiDbdFWf7%2FHY%2B3ipdFt3To%2FIG6XEZC8ZImGPKy9YdN5LhwQ0aIyW5NtHsOtR8BV7VMDk7VCDsoc7uogFUsUlazZG3aV6gKDMSyHOUipUIX6BL%2FmhPZLxxL%2FfMf3Tp6KjqrR%2FrWjFraD%2B95yyOGydjylp0dqFWqAx2nEglp2rHcGgw9%2FgmZlfk%2F6CZcKV8UYmfp8mJ%2F67lNyqoxbZx2Kirs5aSGJG67lAcxv4%2FFcIKvewlMe6T5UUS6u%2BZ2VS%2Fqt1fIU1dHsdEbTR7FJmpV7yZSmSBryTcIsJsl7zpEXe2dbCmCqtTRHXURwzdiemqrifZ4Memtx7uNpaqzp1tF%2FhTnYY4ty%2FxWqlj4d99XGf4LNuM5A7wAQGi7yFVdUxTjHLbeQzwPe42SERJzu4zSBnNhyoeFMFHZaA2xuA5GTWVvEyoppQyJ%2F55ZQsQQbnEs2F6UnRKFmbUHJJw%3D&sz=w2880-h1556'); 
+            background-image: url('https://example.com/your-background-image.png'); 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -26,49 +28,66 @@
 
         /* Form Styling */
         form {
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            background-color: #ffffff; /* White background for the form */
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
             max-width: 500px;
             width: 100%;
+            border: 2px solid #f48fb1; /* Pink border */
         }
 
         label {
             display: block;
             margin-bottom: 8px;
-            color: #333;
+            color: #e91e63; /* Pink for labels */
             font-weight: bold;
         }
 
         input[type="text"],
         input[type="email"],
-        textarea {
+        textarea,
+        select {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 1px solid #f48fb1; /* Light pink border */
             border-radius: 5px;
             box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #e91e63; /* Darker pink border on focus */
+            outline: none;
+            box-shadow: 0px 0px 5px #e91e63;
+        }
+
+        textarea {
+            resize: none;
         }
 
         /* Centered Submit Button */
         .submit-wrapper {
-            text-align: center; /* Center the button */
+            text-align: center;
         }
 
         input[type="submit"] {
-            background-color: #E670C6; /* Custom button color */
+            background-color: #e91e63; /* Pink button background */
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         input[type="submit"]:hover {
-            background-color: #d65bac; /* Darker shade for hover */
+            background-color: #d81b60; /* Darker pink on hover */
         }
     </style>
 </head>
@@ -80,6 +99,8 @@
             <input type="hidden" name="oid" value="00D5j000005Ji1B">
             <input type="hidden" name="retURL" value="https://www.shanitaylor.com/home">
 
+            <input type="hidden" name="lead_source" value="Web">
+
             <label for="first_name">First Name</label>
             <input id="first_name" maxlength="40" name="first_name" size="20" type="text" />
 
@@ -90,15 +111,18 @@
             <input id="email" maxlength="80" name="email" size="20" type="email" />
             
             <label for="phone">Phone</label>
-            <input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+            <input id="phone" maxlength="40" name="phone" size="20" type="text" />
 
             <label for="description">Message</label>
             <textarea name="description" rows="4"></textarea>
 
-            Interested In:<select  id="00NJ4000004ZGis" name="00NJ4000004ZGis" title="Interested In"><option value="">--None--</option><option value="1-on-1 Coaching">1-on-1 Coaching</option>
-<option value="Membership">Membership</option>
-<option value="Both">Both</option>
-</select><br>
+            <label for="interested_in">Interested In</label>
+            <select id="00NJ4000004ZGis" name="00NJ4000004ZGis" title="Interested In">
+                <option value="">--None--</option>
+                <option value="1-on-1 Coaching">1-on-1 Coaching</option>
+                <option value="Membership">Membership</option>
+                <option value="Both">Both</option>
+            </select>
 
             <!-- Submit Button Centered -->
             <div class="submit-wrapper">
