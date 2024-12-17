@@ -1,109 +1,125 @@
-<html>
-
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
-<head>
+<!-- Meta for charset -->
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-</head>
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
 
-<body>
+<!-- Add custom styling for the form -->
 <style>
-.green-form {
-  background-color: #e6f4e4;
-  padding: 20px;
-  border-radius: 10px;
-  width: 400px;
-  margin: 0 auto;
-  font-family: 'Arial', sans-serif;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+    body {
+        font-family: 'Lato', sans-serif; /* Matches website font */
+        margin: 0;
+        padding: 0;
+        background-color: #FDF7FA; /* Light floral background */
+    }
 
-.green-form .form-group {
-  margin-bottom: 15px;
-}
+    .form-container {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #FFFFFF;
+        border: 2px solid #E670C6; /* Pink border */
+        border-radius: 8px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.green-form label {
-  font-size: 14px;
-  font-weight: bold;
-  color: #2f8f20;
-  display: block;
-  margin-bottom: 5px;
-}
+    .form-container h2 {
+        text-align: center;
+        color: #E670C6; /* Pink Title */
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
 
-.green-form input[type="text"],
-.green-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #2f8f20;
-  border-radius: 5px;
-  background-color: #ffffff;
-  font-size: 14px;
-  color: #333;
-}
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: 600;
+    }
 
-.green-form textarea {
-  height: 80px;
-  resize: none;
-}
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #E670C6;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
 
-.green-form input[type="text"]:focus,
-.green-form textarea:focus {
-  outline: none;
-  border-color: #44c36e;
-}
+    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+        border-color: #C85B9E;
+        outline: none;
+        box-shadow: 0 0 5px rgba(230, 112, 198, 0.5);
+    }
 
-.green-form .submit-btn {
-  background-color: #44c36e;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-}
+    textarea {
+        resize: vertical;
+        height: 120px;
+    }
 
-.green-form .submit-btn:hover {
-  background-color: #39a958;
-}
+    input[type="submit"] {
+        background-color: #E670C6; /* Pink button */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #C85B9E; /* Slightly darker pink on hover */
+    }
+
+    /* Floral Decorative Footer */
+    .floral-footer {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .floral-footer img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        .form-container {
+            margin: 20px;
+            padding: 20px;
+        }
+    }
 </style>
 
-<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DF40000057F9m" method="POST">
+<!-- Web-to-Lead Form -->
+<div class="form-container">
+    <h2>Contact Us</h2>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5j000005Ji1B" method="POST">
+        <!-- Hidden Fields -->
+        <input type="hidden" name="oid" value="00D5j000005Ji1B">
+        <input type="hidden" name="retURL" value="https://www.shanitaylor.com/home">
 
-<input type=hidden name="oid" value="00DF40000057F9m">
-<input type=hidden name="retURL" value="https://www.bgsheds.com.au/">
+        <!-- Input Fields -->
+        <label for="first_name">First Name</label>
+        <input id="first_name" maxlength="40" name="first_name" type="text" placeholder="Your First Name" required>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="support@crosscloudpartners.com">                                 -->
-<!--  ----------------------------------------------------------------------  -->
+        <label for="last_name">Last Name</label>
+        <input id="last_name" maxlength="80" name="last_name" type="text" placeholder="Your Last Name" required>
 
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" type="email" placeholder="Your Email Address" required>
 
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+        <label for="company">Company</label>
+        <input id="company" maxlength="40" name="company" type="text" placeholder="Your Company Name">
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+        <label for="description">Message</label>
+        <textarea id="description" name="description" placeholder="Write your message here..."></textarea>
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+        <!-- Submit Button -->
+        <input type="submit" name="submit" value="Submit">
+    </form>
 
-<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-
-Site Address (City):<input  id="0BCIT000000kCWQcity" maxlength="40" name="0BCIT000000kCWQcity" size="20" type="text" /><br>
-
-Site Address (Street):<textarea  id="0BCIT000000kCWPstreet" name="0BCIT000000kCWPstreet" type="text" wrap="soft"></textarea><br>
-
-<input type="submit" name="submit">
-</body>
-
-</form>
-</html>
+    <!-- Floral Decorative Footer -->
+    <div class="floral-footer">
+        <img src="https://d11n7da8rpqbjy.cloudfront.net/opentograce/31063776_16790097684pT2.webp" alt="Floral Decor">
+    </div>
+</div>
