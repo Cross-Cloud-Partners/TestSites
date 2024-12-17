@@ -1,125 +1,97 @@
-<!-- Meta for charset -->
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Web-to-Lead Form</title>
+    <style>
+        /* General Page Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-<!-- Add custom styling for the form -->
-<style>
-    body {
-        font-family: 'Lato', sans-serif; /* Matches website font */
-        margin: 0;
-        padding: 0;
-        background-color: #FDF7FA; /* Light floral background */
-    }
-
-    .form-container {
-        max-width: 600px;
-        margin: 40px auto;
-        padding: 30px;
-        background-color: #FFFFFF;
-        border: 2px solid #E670C6; /* Pink border */
-        border-radius: 8px;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .form-container h2 {
-        text-align: center;
-        color: #E670C6; /* Pink Title */
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 5px;
-        color: #555;
-        font-weight: 600;
-    }
-
-    input[type="text"], input[type="email"], textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #E670C6;
-        border-radius: 4px;
-        font-size: 14px;
-        box-sizing: border-box;
-    }
-
-    input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-        border-color: #C85B9E;
-        outline: none;
-        box-shadow: 0 0 5px rgba(230, 112, 198, 0.5);
-    }
-
-    textarea {
-        resize: vertical;
-        height: 120px;
-    }
-
-    input[type="submit"] {
-        background-color: #E670C6; /* Pink button */
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-    }
-
-    input[type="submit"]:hover {
-        background-color: #C85B9E; /* Slightly darker pink on hover */
-    }
-
-    /* Floral Decorative Footer */
-    .floral-footer {
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .floral-footer img {
-        max-width: 100%;
-        border-radius: 8px;
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-        .form-container {
-            margin: 20px;
+        /* Form Wrapper Styling */
+        .form-wrapper {
+            background-image: url('https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXa9LNZBGAB%2FXKZPwpGw72y0Gitw1Z8K9nVFELSIhzrKz1AyZICfue5fMpjV54%2BD5L6prL7im3UsgKkACEJo30V7ELcZWoj0rB0Mly8OzzWVIl7SbZGFT3n%2FwYTrwi9P5I48MuiDbdFWf7%2FHY%2B3ipdFt3To%2FIG6XEZC8ZImGPKy9YdN5LhwQ0aIyW5NtHsOtR8BV7VMDk7VCDsoc7uogFUsUlazZG3aV6gKDMSyHOUipUIX6BL%2FmhPZLxxL%2FfMf3Tp6KjqrR%2FrWjFraD%2B95yyOGydjylp0dqFWqAx2nEglp2rHcGgw9%2FgmZlfk%2F6CZcKV8UYmfp8mJ%2F67lNyqoxbZx2Kirs5aSGJG67lAcxv4%2FFcIKvewlMe6T5UUS6u%2BZ2VS%2Fqt1fIU1dHsdEbTR7FJmpV7yZSmSBryTcIsJsl7zpEXe2dbCmCqtTRHXURwzdiemqrifZ4Memtx7uNpaqzp1tF%2FhTnYY4ty%2FxWqlj4d99XGf4LNuM5A7wAQGi7yFVdUxTjHLbeQzwPe42SERJzu4zSBnNhyoeFMFHZaA2xuA5GTWVvEyoppQyJ%2F55ZQsQQbnEs2F6UnRKFmbUHJJw%3D&sz=w2880-h1556'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
         }
-    }
-</style>
 
-<!-- Web-to-Lead Form -->
-<div class="form-container">
-    <h2>Contact Us</h2>
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5j000005Ji1B" method="POST">
-        <!-- Hidden Fields -->
-        <input type="hidden" name="oid" value="00D5j000005Ji1B">
-        <input type="hidden" name="retURL" value="https://www.shanitaylor.com/home">
+        /* Form Styling */
+        form {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
 
-        <!-- Input Fields -->
-        <label for="first_name">First Name</label>
-        <input id="first_name" maxlength="40" name="first_name" type="text" placeholder="Your First Name" required>
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
 
-        <label for="last_name">Last Name</label>
-        <input id="last_name" maxlength="80" name="last_name" type="text" placeholder="Your Last Name" required>
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
 
-        <label for="email">Email</label>
-        <input id="email" maxlength="80" name="email" type="email" placeholder="Your Email Address" required>
+        input[type="submit"] {
+            background-color: #E670C6; /* Custom button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-        <label for="company">Company</label>
-        <input id="company" maxlength="40" name="company" type="text" placeholder="Your Company Name">
+        input[type="submit"]:hover {
+            background-color: #d65bac; /* Darker shade for hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Form Wrapper with Background -->
+    <div class="form-wrapper">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5j000005Ji1B" method="POST">
 
-        <label for="description">Message</label>
-        <textarea id="description" name="description" placeholder="Write your message here..."></textarea>
+            <input type="hidden" name="oid" value="00D5j000005Ji1B">
+            <input type="hidden" name="retURL" value="https://www.shanitaylor.com/home">
 
-        <!-- Submit Button -->
-        <input type="submit" name="submit" value="Submit">
-    </form>
+            <label for="first_name">First Name</label>
+            <input id="first_name" maxlength="40" name="first_name" size="20" type="text" />
 
-    <!-- Floral Decorative Footer -->
-    <div class="floral-footer">
-        <img src="https://d11n7da8rpqbjy.cloudfront.net/opentograce/31063776_16790097684pT2.webp" alt="Floral Decor">
+            <label for="last_name">Last Name</label>
+            <input id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+
+            <label for="email">Email</label>
+            <input id="email" maxlength="80" name="email" size="20" type="email" />
+
+            <label for="company">Company</label>
+            <input id="company" maxlength="40" name="company" size="20" type="text" />
+
+            <label for="description">Message</label>
+            <textarea name="description" rows="4"></textarea>
+
+            <input type="submit" name="submit" value="Submit">
+        </form>
     </div>
-</div>
+</body>
+</html>
