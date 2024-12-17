@@ -52,6 +52,11 @@
             box-sizing: border-box;
         }
 
+        /* Centered Submit Button */
+        .submit-wrapper {
+            text-align: center; /* Center the button */
+        }
+
         input[type="submit"] {
             background-color: #E670C6; /* Custom button color */
             color: white;
@@ -90,7 +95,10 @@
             <label for="description">Message</label>
             <textarea name="description" rows="4"></textarea>
 
-            <input type="submit" name="submit" value="Submit">
+            <!-- Submit Button Centered -->
+            <div class="submit-wrapper">
+                <input type="submit" name="submit" value="Submit">
+            </div>
         </form>
     </div>
 </body>
