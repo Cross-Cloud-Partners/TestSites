@@ -7,112 +7,118 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #EEE4DA;
-            margin: 20px;
+            background-image: url('https://www.nightworksstudio.com/cdn/shop/files/la-de-da-8-small_file_test.jpg?v=1722462566&width=1920');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
         }
 
         form {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: auto;
+            border-radius: 10px;
+            width: 400px;
+            margin: 50px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         label {
+            display: block;
+            margin-bottom: 5px;
             font-weight: bold;
         }
 
-        .required:after {
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input:required + label::after, select:required + label::after {
             content: " *";
             color: red;
         }
 
-        input[type="text"], textarea, select {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
         input[type="submit"] {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
+            background-color: #EEE4DA;
+            color: #333;
+            font-weight: bold;
             border: none;
-            border-radius: 4px;
             cursor: pointer;
-            font-size: 16px;
+            border-radius: 5px;
+            padding: 10px;
         }
 
         input[type="submit"]:hover {
-            background-color: #555;
+            background-color: #dcd0c7;
+        }
+
+        .hidden {
+            display: none;
         }
     </style>
 </head>
 <body>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQE000002zorZ" method="POST">
+        <input type="hidden" name="oid" value="00DQE000002zorZ">
+        <input type="hidden" name="retURL" value="http://https://www.nightworksstudio.com/?srsltid=AfmBOoqXzMwIN-4PqllMY2KMYAm7WSdou8BEn2sfoy7NB8ctWhlrL6kr">
+        <input type="hidden" name="lead_source" value="Web" class="hidden">
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQE000002zorZ" method="POST">
+        <label for="first_name">First Name</label>
+        <input id="first_name" maxlength="40" name="first_name" type="text" required>
 
-    <input type="hidden" name="oid" value="00DQE000002zorZ">
-    <input type="hidden" name="retURL" value="http://https://www.nightworksstudio.com/?srsltid=AfmBOoqXzMwIN-4PqllMY2KMYAm7WSdou8BEn2sfoy7NB8ctWhlrL6kr">
-    <input type="hidden" name="LeadSource" value="Web">
+        <label for="last_name">Last Name</label>
+        <input id="last_name" maxlength="80" name="last_name" type="text" required>
 
-    <label for="first_name" class="required">First Name</label>
-    <input id="first_name" name="first_name" maxlength="40" type="text" required />
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" type="email" required>
 
-    <label for="last_name" class="required">Last Name</label>
-    <input id="last_name" name="last_name" maxlength="80" type="text" required />
+        <label for="phone">Phone</label>
+        <input id="phone" maxlength="40" name="phone" type="text">
 
-    <label for="email" class="required">Email</label>
-    <input id="email" name="email" maxlength="80" type="text" required />
+        <label for="company">Company</label>
+        <input id="company" maxlength="40" name="company" type="text">
 
-    <label for="phone">Phone</label>
-    <input id="phone" name="phone" maxlength="40" type="text" />
+        <label for="state">State/Province</label>
+        <input id="state" maxlength="20" name="state" type="text">
 
-    <label for="company">Company</label>
-    <input id="company" name="company" maxlength="40" type="text" />
+        <label for="00NQE000006pmjt">Product Interested In?</label>
+        <select id="00NQE000006pmjt" name="00NQE000006pmjt" required>
+            <option value="">--None--</option>
+            <option value="La De Da Candle">La De Da Candle</option>
+            <option value="La De Da 450 Pendant">La De Da 450 Pendant</option>
+            <option value="La De Da 750 Pendant">La De Da 750 Pendant</option>
+            <option value="Swatches">Swatches</option>
+            <option value="So Pendant">So Pendant</option>
+            <option value="So Sconce">So Sconce</option>
+            <option value="Offcut Wall Sconce">Offcut Wall Sconce</option>
+            <option value="Code Zero Wall Sconce">Code Zero Wall Sconce</option>
+            <option value="Code Kilo">Code Kilo</option>
+            <option value="Code Xray">Code Xray</option>
+            <option value="Code Charlie Tango">Code Charlie Tango</option>
+            <option value="Code Bravo Tango">Code Bravo Tango</option>
+            <option value="Code Delta Kilo">Code Delta Kilo</option>
+            <option value="Code Delta Delta Tango">Code Delta Delta Tango</option>
+            <option value="Tasman Single Pendant">Tasman Single Pendant</option>
+            <option value="Tasman Double Pendant">Tasman Double Pendant</option>
+            <option value="Tasman Triple Pendant">Tasman Triple Pendant</option>
+            <option value="Petrine Wall Sconce">Petrine Wall Sconce</option>
+            <option value="Petrine Single Pendant">Petrine Single Pendant</option>
+            <option value="Petrine Double Pendant">Petrine Double Pendant</option>
+            <option value="Petrine Triple Pendant">Petrine Triple Pendant</option>
+            <option value="Duomo Piccolo Wall Sconce">Duomo Piccolo Wall Sconce</option>
+            <option value="Duomo Piccolo Stem Wall Light">Duomo Piccolo Stem Wall Light</option>
+            <option value="Duomo Piccolo Pendant">Duomo Piccolo Pendant</option>
+        </select>
 
-    <label for="state">State/Province</label>
-    <input id="state" name="state" maxlength="20" type="text" />
+        <label for="description">Description</label>
+        <textarea name="description"></textarea>
 
-    <label for="00NQE000006pmjt" class="required">Product Interested In?</label>
-    <select id="00NQE000006pmjt" name="00NQE000006pmjt" required>
-        <option value="">--None--</option>
-        <option value="La De Da Candle">La De Da Candle</option>
-        <option value="La De Da 450 Pendant">La De Da 450 Pendant</option>
-        <option value="La De Da 750 Pendant">La De Da 750 Pendant</option>
-        <option value="Swatches">Swatches</option>
-        <option value="So Pendant">So Pendant</option>
-        <option value="So Sconce">So Sconce</option>
-        <option value="Offcut Wall Sconce">Offcut Wall Sconce</option>
-        <option value="Code Zero Wall Sconce">Code Zero Wall Sconce</option>
-        <option value="Code Kilo">Code Kilo</option>
-        <option value="Code Xray">Code Xray</option>
-        <option value="Code Charlie Tango">Code Charlie Tango</option>
-        <option value="Code Bravo Tango">Code Bravo Tango</option>
-        <option value="Code Delta Kilo">Code Delta Kilo</option>
-        <option value="Code Delta Delta Tango">Code Delta Delta Tango</option>
-        <option value="Tasman Single Pendant">Tasman Single Pendant</option>
-        <option value="Tasman Double Pendant">Tasman Double Pendant</option>
-        <option value="Tasman Triple Pendant">Tasman Triple Pendant</option>
-        <option value="Petrine Wall Sconce">Petrine Wall Sconce</option>
-        <option value="Petrine Single Pendant">Petrine Single Pendant</option>
-        <option value="Petrine Double Pendant">Petrine Double Pendant</option>
-        <option value="Petrine Triple Pendant">Petrine Triple Pendant</option>
-        <option value="Duomo Piccolo Wall Sconce">Duomo Piccolo Wall Sconce</option>
-        <option value="Duomo Piccolo Stem Wall Light">Duomo Piccolo Stem Wall Light</option>
-        <option value="Duomo Piccolo Pendant">Duomo Piccolo Pendant</option>
-    </select>
-
-    <label for="description">Description</label>
-    <textarea id="description" name="description"></textarea>
-
-    <input type="submit" value="Submit">
-</form>
-
+        <input type="submit" name="submit" value="Submit">
+    </form>
 </body>
 </html>
