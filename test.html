@@ -1,46 +1,118 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web to Lead Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #EEE4DA;
+            margin: 20px;
+        }
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+        label {
+            font-weight: bold;
+        }
 
-<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DF40000057F9m" method="POST">
+        .required:after {
+            content: " *";
+            color: red;
+        }
 
-<input type=hidden name='captcha_settings' value='{"keyname":"CCPTestKeyPair","fallback":"true","orgId":"00DF40000057F9m","ts":""}'>
-<input type=hidden name="oid" value="00DF40000057F9m">
-<input type=hidden name="retURL" value="http://google.com">
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="support@crosscloudpartners.com">                                 -->
-<!--  ----------------------------------------------------------------------  -->
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
 
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQE000002zorZ" method="POST">
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    <input type="hidden" name="oid" value="00DQE000002zorZ">
+    <input type="hidden" name="retURL" value="http://https://www.nightworksstudio.com/?srsltid=AfmBOoqXzMwIN-4PqllMY2KMYAm7WSdou8BEn2sfoy7NB8ctWhlrL6kr">
+    <input type="hidden" name="LeadSource" value="Web">
 
-<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+    <label for="first_name" class="required">First Name</label>
+    <input id="first_name" name="first_name" maxlength="40" type="text" required />
 
-<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+    <label for="last_name" class="required">Last Name</label>
+    <input id="last_name" name="last_name" maxlength="80" type="text" required />
 
-<label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+    <label for="email" class="required">Email</label>
+    <input id="email" name="email" maxlength="80" type="text" required />
 
-<div class="g-recaptcha" data-sitekey="6LdmXU4qAAAAAAvD9FCbdUG241dQJLuOBwVRSx8F"></div><br>
-<input type="submit" name="submit">
+    <label for="phone">Phone</label>
+    <input id="phone" name="phone" maxlength="40" type="text" />
 
+    <label for="company">Company</label>
+    <input id="company" name="company" maxlength="40" type="text" />
+
+    <label for="state">State/Province</label>
+    <input id="state" name="state" maxlength="20" type="text" />
+
+    <label for="00NQE000006pmjt" class="required">Product Interested In?</label>
+    <select id="00NQE000006pmjt" name="00NQE000006pmjt" required>
+        <option value="">--None--</option>
+        <option value="La De Da Candle">La De Da Candle</option>
+        <option value="La De Da 450 Pendant">La De Da 450 Pendant</option>
+        <option value="La De Da 750 Pendant">La De Da 750 Pendant</option>
+        <option value="Swatches">Swatches</option>
+        <option value="So Pendant">So Pendant</option>
+        <option value="So Sconce">So Sconce</option>
+        <option value="Offcut Wall Sconce">Offcut Wall Sconce</option>
+        <option value="Code Zero Wall Sconce">Code Zero Wall Sconce</option>
+        <option value="Code Kilo">Code Kilo</option>
+        <option value="Code Xray">Code Xray</option>
+        <option value="Code Charlie Tango">Code Charlie Tango</option>
+        <option value="Code Bravo Tango">Code Bravo Tango</option>
+        <option value="Code Delta Kilo">Code Delta Kilo</option>
+        <option value="Code Delta Delta Tango">Code Delta Delta Tango</option>
+        <option value="Tasman Single Pendant">Tasman Single Pendant</option>
+        <option value="Tasman Double Pendant">Tasman Double Pendant</option>
+        <option value="Tasman Triple Pendant">Tasman Triple Pendant</option>
+        <option value="Petrine Wall Sconce">Petrine Wall Sconce</option>
+        <option value="Petrine Single Pendant">Petrine Single Pendant</option>
+        <option value="Petrine Double Pendant">Petrine Double Pendant</option>
+        <option value="Petrine Triple Pendant">Petrine Triple Pendant</option>
+        <option value="Duomo Piccolo Wall Sconce">Duomo Piccolo Wall Sconce</option>
+        <option value="Duomo Piccolo Stem Wall Light">Duomo Piccolo Stem Wall Light</option>
+        <option value="Duomo Piccolo Pendant">Duomo Piccolo Pendant</option>
+    </select>
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description"></textarea>
+
+    <input type="submit" value="Submit">
 </form>
+
+</body>
+</html>
