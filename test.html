@@ -11,16 +11,19 @@
             background-size: cover;
             background-position: center;
             margin: 0;
-            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         form {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px; /* Increased padding for a larger form box */
             border-radius: 10px;
-            width: 400px;
-            margin: 50px auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 500px; /* Increased width for the form */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: left;
         }
 
         label {
@@ -30,9 +33,9 @@
         }
 
         input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
+            width: 100%; /* Fields fill the available width of the form */
+            padding: 10px;
+            margin-bottom: 20px; /* Increased spacing between fields */
             border: 1px solid #ccc;
             border-radius: 5px;
             font-size: 14px;
@@ -50,15 +53,17 @@
             border: none;
             cursor: pointer;
             border-radius: 5px;
-            padding: 10px;
+            padding: 12px;
+            width: 100%;
         }
 
         input[type="submit"]:hover {
             background-color: #dcd0c7;
         }
 
-        .hidden {
-            display: none;
+        textarea {
+            resize: none;
+            height: 80px; /* Keeps the height consistent */
         }
     </style>
 </head>
@@ -93,32 +98,9 @@
             <option value="La De Da 450 Pendant">La De Da 450 Pendant</option>
             <option value="La De Da 750 Pendant">La De Da 750 Pendant</option>
             <option value="Swatches">Swatches</option>
-            <option value="So Pendant">So Pendant</option>
-            <option value="So Sconce">So Sconce</option>
-            <option value="Offcut Wall Sconce">Offcut Wall Sconce</option>
-            <option value="Code Zero Wall Sconce">Code Zero Wall Sconce</option>
-            <option value="Code Kilo">Code Kilo</option>
-            <option value="Code Xray">Code Xray</option>
-            <option value="Code Charlie Tango">Code Charlie Tango</option>
-            <option value="Code Bravo Tango">Code Bravo Tango</option>
-            <option value="Code Delta Kilo">Code Delta Kilo</option>
-            <option value="Code Delta Delta Tango">Code Delta Delta Tango</option>
-            <option value="Tasman Single Pendant">Tasman Single Pendant</option>
-            <option value="Tasman Double Pendant">Tasman Double Pendant</option>
-            <option value="Tasman Triple Pendant">Tasman Triple Pendant</option>
-            <option value="Petrine Wall Sconce">Petrine Wall Sconce</option>
-            <option value="Petrine Single Pendant">Petrine Single Pendant</option>
-            <option value="Petrine Double Pendant">Petrine Double Pendant</option>
-            <option value="Petrine Triple Pendant">Petrine Triple Pendant</option>
-            <option value="Duomo Piccolo Wall Sconce">Duomo Piccolo Wall Sconce</option>
-            <option value="Duomo Piccolo Stem Wall Light">Duomo Piccolo Stem Wall Light</option>
-            <option value="Duomo Piccolo Pendant">Duomo Piccolo Pendant</option>
         </select>
 
-        <label for="description">Description</label>
-        <textarea name="description"></textarea>
-
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
