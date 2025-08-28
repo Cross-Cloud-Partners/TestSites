@@ -1,115 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salesforce Web-to-Lead Form</title>
-    <style>
-        /* General Page Styling */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfc;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-        /* Form Wrapper Styling */
-        .form-wrapper {
-            background-image: url('https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEXa9LNZBGAB%2FXKZPwpGw72y0Gitw1Z8K9nVFELSIhzrKz1AyZICfue5fMpjV54%2BD5L6prL7im3UsgKkACEJo30V7ELcZWoj0rB0Mly8OzzWVIl7SbZGFT3n%2FwYTrwi9P5I48MuiDbdFWf7%2FHY%2B3ipdFt3To%2FIG6XEZC8ZImGPKy9YdN5LhwQ0aIyW5NtHsOtR8BV7VMDk7VCDsoc7uogFUsUlazZG3aV6gKDMSyHOUipUIX6BL%2FmhPZLxxL%2FfMf3Tp6KjqrR%2FrWjFraD%2B95yyOGydjylp0dqFWqAx2nEglp2rHcGgw9%2FgmZlfk%2F6CZcKV8UYmfp8mJ%2F67lNyqoxbZx2Kirs5aSGJG67lAcxv4%2FFcIKvewlMe6T5UUS6u%2BZ2VS%2Fqt1fIU1dHsdEbTR7FJmpV7yZSmSBryTcIsJsl7zpEXe2dbCmCqtTRHXURwzdiemqrifZ4Memtx7uNpaqzp1tF%2FhTnYY4ty%2FxWqlj4d99XGf4LNuM5A7wAQGi7yFVdUxTjHLbeQzwPe42SERJzu4zSBnNhyoeFMFHZaA2xuA5GTWVvEyoppQyJ%2F55ZQsQQbnEs2F6UnRKFmbUHJJw%3D&sz=w2880-h1556'); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+    form {
+      background: #fff;
+      border: 2px solid #b74426;
+      border-radius: 10px;
+      padding: 20px 30px;
+      max-width: 450px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-        /* Form Styling */
-        form {
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 100%;
-        }
+    form h2 {
+      text-align: center;
+      color: #b74426;
+      margin-bottom: 20px;
+    }
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-            font-weight: bold;
-        }
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #333;
+    }
 
-        input[type="text"],
-        input[type="email"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
 
-        /* Centered Submit Button */
-        .submit-wrapper {
-            text-align: center; /* Center the button */
-        }
+    textarea {
+      min-height: 80px;
+    }
 
-        input[type="submit"] {
-            background-color: #E670C6; /* Custom button color */
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+    select {
+      background: #fff;
+    }
 
-        input[type="submit"]:hover {
-            background-color: #d65bac; /* Darker shade for hover */
-        }
-    </style>
+    input[type="submit"] {
+      background-color: #b74426;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #99351d;
+    }
+  </style>
 </head>
 <body>
-    <!-- Form Wrapper with Background -->
-    <div class="form-wrapper">
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5j000005Ji1B" method="POST">
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQE00000AGWW1" method="POST">
+    <h2>Contact Us</h2>
 
-            <!-- Hidden Fields -->
-            <input type="hidden" name="oid" value="00D5j000005Ji1B">
-            <input type="hidden" name="retURL" value="https://www.shanitaylor.com/home">
-            <input type="hidden" name="lead_source" value="Web">
+    <input type="hidden" name="oid" value="00DQE00000AGWW1">
+    <input type="hidden" name="retURL" value="https://www.australianindigenouscoffee.com.au/about-us/">
 
-            <label for="first_name">First Name*</label>
-            <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required />
+    <label for="first_name">First Name</label>
+    <input id="first_name" maxlength="40" name="first_name" type="text" />
 
-            <label for="last_name">Last Name*</label>
-            <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required />
+    <label for="last_name">Last Name</label>
+    <input id="last_name" maxlength="80" name="last_name" type="text" />
 
-            <label for="email">Email*</label>
-            <input id="email" maxlength="80" name="email" size="20" type="email" required />
+    <label for="email">Email</label>
+    <input id="email" maxlength="80" name="email" type="email" />
 
+    <label for="description">Message</label>
+    <textarea name="description"></textarea>
 
-            <label for="description">Message*</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
+    <label for="00NQE00000L9fUT">Product Interested In?</label>
+    <select id="00NQE00000L9fUT" name="00NQE00000L9fUT" title="Product Interested In?">
+      <option value="">--None--</option>
+      <option value="Jura Giga X3 Automatic Coffee Machine">Jura Giga X3 Automatic Coffee Machine</option>
+      <option value="Necta Krea Commercial Automatic Vending Machine">Necta Krea Commercial Automatic Vending Machine</option>
+      <option value="Q13EC Quamar Conical Blade Grinder">Q13EC Quamar Conical Blade Grinder</option>
+      <option value="Q50E Quamar Flat Blade Grinder">Q50E Quamar Flat Blade Grinder</option>
+      <option value="SAB Elegance Commercial Coffee Machine">SAB Elegance Commercial Coffee Machine</option>
+      <option value="WMF1500s Automatic Coffee and Hot Chocolate Machine">WMF1500s Automatic Coffee and Hot Chocolate Machine</option>
+      <option value="Jura Claris Water Filter for Tanked Coffee Machines">Jura Claris Water Filter for Tanked Coffee Machines</option>
+      <option value="Milk Steam Cappuccino Cleaner 1Litre">Milk Steam Cappuccino Cleaner 1Litre</option>
+      <option value="Triple Action Descale">Triple Action Descale</option>
+      <option value="Automatic coffee machine cleaning tablets">Automatic coffee machine cleaning tablets</option>
+      <option value="Vending Chocolate for Automatic Hot Choc Machines">Vending Chocolate for Automatic Hot Choc Machines</option>
+      <option value="21 Litre Milk Fridge">21 Litre Milk Fridge</option>
+      <option value="Campfire 1kg Bag">Campfire 1kg Bag</option>
+      <option value="Rustic 1kg Bag">Rustic 1kg Bag</option>
+      <option value="Single Origin Colombian 1kg Bag">Single Origin Colombian 1kg Bag</option>
+    </select>
 
-            <!-- Interested In Field -->
-            <label for="interested_in">Interested In*</label>
-            <select id="interested_in" name="00NJ4000004ZGis" required>
-                <option value="">--None--</option>
-                <option value="1-on-1 Coaching">1-on-1 Coaching</option>
-                <option value="Membership">Membership</option>
-                <option value="Both">Both</option>
-            </select>
-
-            <!-- Submit Button Centered -->
-            <div class="submit-wrapper">
-                <input type="submit" name="submit" value="Submit">
-            </div>
-        </form>
-    </div>
+    <input type="submit" name="submit" value="Submit">
+  </form>
 </body>
 </html>
