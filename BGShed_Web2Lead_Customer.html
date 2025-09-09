@@ -1,180 +1,174 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  META setup -->
+<!--  ----------------------------------------------------------------------  -->
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-<html>
-
-  <head>
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-    <!--  If necessary, please modify the charset parameter to specify the        -->
-    <!--  character set of your HTML page.                                        -->
-    <!--  ----------------------------------------------------------------------  -->
-    
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8" />
-  </head>
-
-  <body>
-    <h1>Web-to-Lead Form For Customers</h1>
-    <br />    
-    <br />
-    <!--  ----------------------------------------------------------------------  -->
-    <!--  NOTE: Please add the following <FORM> element to your page.             -->
-    <!--  ----------------------------------------------------------------------  -->
-    
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIT0000035XGb" method="POST">
-    
-      <input type=hidden name="oid" value="00DIT0000035XGb">
-      <input type=hidden name="retURL" value="https://www.bgsheds.com.au/">
-      
-      <!--  ----------------------------------------------------------------------  -->
-      <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-      <!--  these lines if you wish to test in debug mode.                          -->
-      <!--  <input type="hidden" name="debug" value=1>                              -->
-      <!--  <input type="hidden" name="debugEmail"                                  -->
-      <!--  value="support@crosscloudpartners.com">                                 -->
-      <!--  ----------------------------------------------------------------------  -->
-      
-      <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-      
-      <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-      
-      <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-      
-      <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-      
-      <label for="lead_source">Enquiry Source</label>
-      <select  id="lead_source" name="lead_source">
-        <option value="">--None--</option>
-        <option value="Adwords">Adwords</option>
-        <option value="E Bay">E Bay</option>
-        <option value="Home Improvements">Home Improvements</option>
-        <option value="Radio">Radio</option>
-        <option value="Referral">Referral</option>
-        <option value="Repeat Customer">Repeat Customer</option>
-        <option value="SIgnage">SIgnage</option>
-        <option value="Trading Post">Trading Post</option>
-        <option value="Website">Website</option>
-        <option value="Yellow Pages">Yellow Pages</option>
-        <option value="Other">Other</option>
-      </select><br>
-
-      <p>Site Address</p>
-       Street:  <input  id="00NIT00000M0Y2t" maxlength="255" name="00NIT00000M0Y2t" size="20" type="text" /><br>
-       Suburb/Town:  <input  id="00NIT00000M0Y2y" maxlength="255" name="00NIT00000M0Y2y" size="20" type="text" /><br>
-      
-      Interested in:<select  id="00NIT00000M0Yjw" multiple="multiple" name="00NIT00000M0Yjw" title="Interested in"><option value="Roof Types - Gable Roof Sheds">Roof Types - Gable Roof Sheds</option>
-      <option value="Roof Types - Skillion Roof Garages">Roof Types - Skillion Roof Garages</option>
-      <option value="Roof Types - Split Gable Roof">Roof Types - Split Gable Roof</option>
-      <option value="Roof Types - Split Skillion Roof">Roof Types - Split Skillion Roof</option>
-      <option value="Garages &amp; Sheds - Single Garage">Garages &amp; Sheds - Single Garage</option>
-      <option value="Garages &amp; Sheds - Double Garages">Garages &amp; Sheds - Double Garages</option>
-      <option value="Garages &amp; Sheds - Triple Garages">Garages &amp; Sheds - Triple Garages</option>
-      <option value="Garages &amp; Sheds - Lean Tos">Garages &amp; Sheds - Lean Tos</option>
-      <option value="Garages &amp; Sheds - Garaports">Garages &amp; Sheds - Garaports</option>
-      <option value="Barns - American Barn">Barns - American Barn</option>
-      <option value="Barns - Aussie Barn">Barns - Aussie Barn</option>
-      <option value="Barns - Machinery Sheds">Barns - Machinery Sheds</option>
-      <option value="Barns - School Sheds">Barns - School Sheds</option>
-      <option value="Barns - Sun Cover Sheds">Barns - Sun Cover Sheds</option>
-      <option value="Barns - Large Sheds">Barns - Large Sheds</option>
-      <option value="Carports &amp; Verandahs - Firmlok Skillion Roof Freestanding">Carports &amp; Verandahs - Firmlok Skillion Roof Freestanding</option>
-      <option value="Carports &amp; Verandahs - Firmlok Skillion Roof Attached">Carports &amp; Verandahs - Firmlok Skillion Roof Attached</option>
-      <option value="Carports &amp; Verandahs - Firmlok Gable Roof Freestanding">Carports &amp; Verandahs - Firmlok Gable Roof Freestanding</option>
-      <option value="Carports &amp; Verandahs - Firmlok Gable Roof Attached">Carports &amp; Verandahs - Firmlok Gable Roof Attached</option>
-      <option value="Carports &amp; Verandahs - Firmlok Dutch Roof Freestanding">Carports &amp; Verandahs - Firmlok Dutch Roof Freestanding</option>
-      <option value="Carports &amp; Verandahs - Firmlok Dutch Gable Roof Attached">Carports &amp; Verandahs - Firmlok Dutch Gable Roof Attached</option>
-      <option value="Carports &amp; Verandahs - Firmlok Hip Roof Freestanding">Carports &amp; Verandahs - Firmlok Hip Roof Freestanding</option>
-      <option value="Carports &amp; Verandahs - Firmlok Hip Roof Attached">Carports &amp; Verandahs - Firmlok Hip Roof Attached</option>
-      </select><br>
-      
-      <label for="00NIT00000M0Y3N">Length:</label>
-      <select  id="00NIT00000M0Y3N" name="00NIT00000M0Y3N">
-          <option value="">--None--</option>
-          <option value="4">4</option>
-          <option value="4.5">4.5</option>
-          <option value="5">5</option>
-          <option value="5.5">5.5</option>
-          <option value="6">6.0</option>
-          <option value="6.5">6.5</option>
-          <option value="7">7.0</option>
-          <option value="7.5">7.5</option>
-          <option value="8">8.0</option>
-          <option value="8.5">8.5</option>
-          <option value="9">9.0</option>
-          <option value="9.5">9.5</option>
-          <option value="10">10.0</option>
-          <option value="11">11.0</option>
-          <option value="12">12.0</option>
-          <option value="13">13.0</option>
-          <option value="14">14.0</option>
-          <option value="15">15.0</option>
-          <option value="16">16.0</option>
-          <option value="17">17.0</option>
-          <option value="18">18.0</option>
-          <option value="20">20.0</option>
-          <option value="22">22.0</option>
-          <option value="22">22.0</option>
-          <option value="24">24.0</option>
-          <option value="26">26.0</option>
-          <option value="28">28.0</option>
-          <option value="30">30.0</option>
-          <option value="36">36.0</option>
-          <option value="42">42.0</option>
-          <option value="48">48.0</option>
-          <option value="54">54.0</option>
-          <option value="60">60.0</option>
-      </select><br>
-      
-       <label for="00NIT00000M0Y3S">Width:</label>
-        <select  id="00NIT00000M0Y3S" name="00NIT00000M0Y3S">
-          <option value="">--None--</option>
-          <option value="3">3</option>
-          <option value="3.5">3.5</option>
-          <option value="4">4</option>
-          <option value="4.5">4.5</option>
-          <option value="5">5.0</option>
-          <option value="5.5">5.5</option>
-          <option value="6">6.0</option>
-          <option value="6.5">6.5</option>
-          <option value="7">7.0</option>
-          <option value="7.5">7.5</option>
-          <option value="8">8.0</option>
-          <option value="8.5">8.5</option>
-          <option value="9">9.0</option>
-          <option value="9.5">9.5</option>
-          <option value="10">10.0</option>
-          <option value="11">11.0</option>
-          <option value="12">12.0</option>
-          <option value="13">13.0</option>
-          <option value="14">14.0</option>
-          <option value="15">15.0</option>
-          <option value="16">16.0</option>
-          <option value="17">17.0</option>
-          <option value="18">18.0</option>
-      </select><br>
-      
-       <label for="00NIT00000M0Y3X">Height:</label>
-        <select  id="00NIT00000M0Y3X" name="00NIT00000M0Y3X">
-          <option value="">--None--</option>
-          <option value="2.4">2.4</option>
-          <option value="2.7">2.7</option>
-          <option value="3">3</option>
-          <option value="3.5">3.5</option>
-          <option value="4">4</option>
-          <option value="4.5">4.5</option>
-          <option value="5">5.0</option>
-          <option value="5.5">5.5</option>
-          <option value="6">6.0</option>
-      </select><br>
-      
-      Details:<textarea  id="00NIT00000M0Y3c" name="00NIT00000M0Y3c" rows="3" type="text" wrap="soft"></textarea><br>
-      
-      <input type="submit" name="submit">
-
-      <p>If you do have any attachments please send them to this email <a href="mailto:sales@bgsheds.com.au">sales@bgsheds.com.au</a></p>
-    
-    </form>
-
-
-</body>
+<!--  ----------------------------------------------------------------------  -->
+<!--  Web-to-Lead Form -->
+<!--  ----------------------------------------------------------------------  -->
+<div class="form-container">
   
-</html>
-  
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="https://rightpropertygroup.com.au/wp-content/uploads/2020/12/logo-black.png" 
+         alt="Right Property Group Logo" class="logo">
+  </div>
+
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQE0000023xPt" method="POST" class="webform">
+
+    <input type="hidden" name="oid" value="00DQE0000023xPt">
+    <input type="hidden" name="retURL" value="https://rightpropertygroup.com.au/">
+
+    <!-- Hide Lead Source but set default value -->
+    <input type="hidden" id="lead_source" name="lead_source" value="Website">
+
+    <!-- First Name -->
+    <label for="first_name">First Name <span class="required">*</span></label>
+    <input id="first_name" maxlength="40" name="first_name" type="text" required />
+
+    <!-- Last Name -->
+    <label for="last_name">Last Name <span class="required">*</span></label>
+    <input id="last_name" maxlength="80" name="last_name" type="text" required />
+
+    <!-- Email -->
+    <label for="email">Email <span class="required">*</span></label>
+    <input id="email" maxlength="80" name="email" type="email" required />
+
+    <!-- Phone -->
+    <label for="phone">Phone <span class="required">*</span></label>
+    <input id="phone" maxlength="40" name="phone" type="text" required />
+
+    <!-- Company -->
+    <label for="company">Company <span class="required">*</span></label>
+    <input id="company" maxlength="40" name="company" type="text" required />
+
+    <!-- Service Interested In -->
+    <label for="00NQE000001nixB">Service interested in? <span class="required">*</span></label>
+    <select id="00NQE000001nixB" name="00NQE000001nixB" required>
+      <option value="">--None--</option>
+      <option value="Financial Advice">Financial Advice</option>
+      <option value="Property Acquisition">Property Acquisition</option>
+      <option value="Self-Managed Super Fund Investment">Self-Managed Super Fund Investment</option>
+    </select>
+
+   
+    <!-- Existing Client Question -->
+<label for="existing_client">Are you an existing client or currently working with RPG? <span class="required">*</span></label>
+<div class="radio-group">
+  <input type="radio" id="existing_yes" name="00NQE00000Lgq9N" value="1" required>
+  <label for="existing_yes">Yes</label>
+
+  <input type="radio" id="existing_no" name="00NQE00000Lgq9N" value="0">
+  <label for="existing_no">No</label>
+</div>
+
+    <!-- Description -->
+    <label for="description">How can we assit you? <span class="required">*</span></label>
+    <textarea id="description" name="description" required></textarea>
+
+    <!-- Submit -->
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</div>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  CSS Styling -->
+<!--  ----------------------------------------------------------------------  -->
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    min-height: 100vh;         /* full height viewport */
+    background: #fff;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    max-width: 220px;
+    height: auto;
+  }
+
+  .webform {
+    font-family: Arial, sans-serif;
+    color: black;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: #fff;
+    text-align: left;
+  }
+
+  .webform label {
+    display: block;
+    margin: 8px 0 4px;
+    font-weight: bold;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .webform input[type="text"],
+  .webform input[type="email"],
+  .webform select,
+  .webform textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .webform textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  .webform input[type="submit"] {
+    background-color: #f86011;
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+
+  .webform input[type="submit"]:hover {
+    background-color: #d94f0f;
+  }
+
+  .required {
+    color: #f86011;
+  }
+  .radio-group {
+  margin: 6px 0 14px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 6px;
+}
+</style>
