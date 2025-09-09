@@ -16,6 +16,9 @@
 
   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQE0000023xPt" method="POST" class="webform">
 
+    <!-- Contact Us Heading inside the form -->
+    <h2 class="form-heading">Contact Us</h2>
+
     <input type="hidden" name="oid" value="00DQE0000023xPt">
     <input type="hidden" name="retURL" value="https://rightpropertygroup.com.au/">
 
@@ -51,19 +54,18 @@
       <option value="Self-Managed Super Fund Investment">Self-Managed Super Fund Investment</option>
     </select>
 
-   
     <!-- Existing Client Question -->
-<label for="existing_client">Are you an existing client or currently working with RPG? <span class="required">*</span></label>
-<div class="radio-group">
-  <input type="radio" id="existing_yes" name="00NQE00000Lgq9N" value="1" required>
-  <label for="existing_yes">Yes</label>
+    <label for="existing_client">Are you an existing client or currently working with RPG? <span class="required">*</span></label>
+    <div class="radio-group">
+      <input type="radio" id="existing_yes" name="00NQE00000Lgq9N" value="1" required>
+      <label for="existing_yes">Yes</label>
 
-  <input type="radio" id="existing_no" name="00NQE00000Lgq9N" value="0">
-  <label for="existing_no">No</label>
-</div>
+      <input type="radio" id="existing_no" name="00NQE00000Lgq9N" value="0">
+      <label for="existing_no">No</label>
+    </div>
 
     <!-- Description -->
-    <label for="description">How can we assit you? <span class="required">*</span></label>
+    <label for="description">How can we assist you? <span class="required">*</span></label>
     <textarea id="description" name="description" required></textarea>
 
     <!-- Submit -->
@@ -87,12 +89,12 @@
 
   .form-container {
     width: 100%;
-    max-width: 420px;
+    max-width: 600px;  /* wider form */
     text-align: center;
   }
 
   .logo-container {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .logo {
@@ -100,10 +102,18 @@
     height: auto;
   }
 
+  .form-heading {
+    color: #f86011;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
   .webform {
     font-family: Arial, sans-serif;
     color: black;
-    padding: 20px;
+    padding: 25px;
     border: 1px solid #eee;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -117,28 +127,20 @@
     font-weight: bold;
   }
 
-  .checkbox-label {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-
   .webform input[type="text"],
   .webform input[type="email"],
   .webform select,
   .webform textarea {
     width: 100%;
-    padding: 6px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    margin-bottom: 12px;
-    font-size: 14px;
+    margin-bottom: 14px;
+    font-size: 15px;
   }
 
   .webform textarea {
-    min-height: 80px;
+    min-height: 90px;
     resize: vertical;
   }
 
@@ -146,10 +148,11 @@
     background-color: #f86011;
     border: none;
     color: white;
-    padding: 10px 16px;
+    padding: 12px 16px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 16px;
     width: 100%;
     transition: background 0.3s ease;
   }
@@ -161,14 +164,15 @@
   .required {
     color: #f86011;
   }
-  .radio-group {
-  margin: 6px 0 14px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
 
-.radio-group input[type="radio"] {
-  margin-right: 6px;
-}
+  .radio-group {
+    margin: 6px 0 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .radio-group input[type="radio"] {
+    margin-right: 6px;
+  }
 </style>
