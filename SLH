@@ -1,0 +1,139 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  META setup -->
+<!--  ----------------------------------------------------------------------  -->
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  Web-to-Lead Form for SLH -->
+<!--  ----------------------------------------------------------------------  -->
+<div class="form-container">
+
+  <!-- Logo -->
+  <div class="logo-container">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 1700 460" xml:space="preserve" class="cust-svg-750555"><style>.cust-svg-750555 .st0{fill:#f68d63}</style><path id="XMLID_416_" class="st0" d="M309.56 151.05v62.42c0 2.13-1.14 4.1-2.98 5.17l-.01.01c-3.98 2.29-8.94-.58-8.94-5.17v-51.46c0-.81-.87-1.3-1.57-.91l-19.18 11.08c-3.98 2.29-8.96-.57-8.96-5.17v-.01c0-2.13 1.14-4.1 2.99-5.17l19.17-11.07c.7-.4.7-1.42 0-1.81L167.73 78.28a5.972 5.972 0 01-2.98-5.16c0-4.59 4.97-7.46 8.95-5.16l131.85 76.16a7.968 7.968 0 014.01 6.93z"></path><path id="XMLID_415_" d="M132.25 255.67c-.03.02-.07.04-.1.07l-16.02 9.24 16.12-9.31z" fill="#fff"></path><path id="XMLID_414_" class="st0" d="M17.89 321.67l120.96 69.83-.01 13.78L5.97 328.55l-1.93-1.12A8.084 8.084 0 010 320.44v-17.38c0-2.13 1.14-4.1 2.99-5.17.96-.55 1.98-.81 2.97-.81 3.12 0 5.98 2.5 5.98 5.98v8.26l120.57-69.59 11.94 6.89-126.56 73.05z"></path><path id="XMLID_409_" class="st0" d="M287.65 323.98l-.01 13.81-116.92 67.5v-13.8z"></path><path id="XMLID_413_" d="M98.75 221.8l11.94 6.89L8.95 287.45c-3.98 2.3-8.95-.57-8.95-5.17 0-2.13 1.14-4.1 2.98-5.17l95.77-55.31z"></path><path id="XMLID_412_" d="M43.15 189.71l11.94 6.89-43.24 24.97C6.58 224.61 0 220.81 0 214.73V164.8l11.94 6.89v34.43a.93.93 0 001.39.81l29.82-17.22z"></path><path id="XMLID_411_" d="M154.78 67.37v.01c0 2.13-1.14 4.1-2.98 5.17L27.85 144.11l-11.94-6.89 129.92-75.01c3.98-2.3 8.95.57 8.95 5.16z"></path><path id="XMLID_410_" d="M160.75 135.15v59.95c0 2.9-1.55 5.59-4.06 7.04l-14.17 8.18-11.93-6.89 15.93-9.2a4.573 4.573 0 002.29-3.96v-45.79c0-.88-.95-1.43-1.72-.99l-60.17 34.74-11.94-6.9 74.2-42.85c5.14-2.97 11.57.74 11.57 6.67z"></path><path id="XMLID_408_" d="M309.56 242.18v78.44c0 2.79-1.49 5.37-3.91 6.77l-7.93 4.58-.11-80.11c0-1.23-1.33-1.99-2.39-1.38l-130.3 75.24a8.352 8.352 0 00-4.17 7.23v78.09l-2.03 1.17a7.887 7.887 0 01-7.89 0l-2.03-1.17V260.18c0-3.3 2.67-5.97 5.97-5.97s5.97 2.67 5.97 5.97v54.16l136.89-79.04c5.31-3.06 11.93.76 11.93 6.88z"></path><g id="XMLID_406_"><path id="XMLID_407_" d="M261.94 177.35c0 2.13-1.14 4.1-2.99 5.17l-100.33 57.91a7.727 7.727 0 01-7.7 0L0 153.31v-2.53c0-2.71 1.44-5.21 3.78-6.56l2.17-1.26h.01l147.32 85.06c.92.53 2.05.53 2.96 0l96.73-55.85c4-2.29 8.97.58 8.97 5.18z"></path></g><path d="M449.85 218.78c.66 1.42 1.87 2.74 3.62 3.97s4.17 2.36 7.24 3.4c3.08 1.04 6.99 2.13 11.72 3.26 5.21 1.32 9.83 2.79 13.85 4.39 4.03 1.61 7.36 3.57 10.01 5.88 2.65 2.32 4.67 5.01 6.04 8.08 1.37 3.07 2.06 6.68 2.06 10.84 0 4.72-.87 8.93-2.6 12.61-1.73 3.68-4.15 6.8-7.24 9.35s-6.81 4.49-11.14 5.81c-4.34 1.32-9.11 1.98-14.3 1.98-7.65 0-14.97-1.3-21.96-3.9-6.99-2.6-13.46-6.59-19.41-11.97l10.49-12.47c4.82 4.16 9.68 7.35 14.59 9.57 4.91 2.22 10.49 3.33 16.72 3.33 5.38 0 9.66-1.13 12.82-3.4s4.75-5.34 4.75-9.21c0-1.79-.31-3.4-.92-4.82-.62-1.42-1.75-2.71-3.41-3.9-1.66-1.18-3.93-2.29-6.82-3.33s-6.65-2.13-11.29-3.26c-5.3-1.23-10.02-2.6-14.13-4.11-4.12-1.51-7.58-3.4-10.37-5.67-2.79-2.27-4.93-5.01-6.39-8.22-1.47-3.21-2.2-7.13-2.2-11.76 0-4.34.84-8.29 2.53-11.83 1.69-3.54 4-6.59 6.96-9.14 2.95-2.55 6.5-4.51 10.65-5.88s8.68-2.05 13.59-2.05c7.27 0 13.82 1.06 19.63 3.19s11.26 5.22 16.37 9.28l-9.35 13.18c-4.53-3.31-9.02-5.83-13.46-7.58-4.44-1.75-8.93-2.62-13.46-2.62-5.1 0-9.07 1.16-11.9 3.47-2.83 2.32-4.25 5.13-4.25 8.43-.03 1.98.3 3.68.96 5.1zM541.95 187.74h17.29v83.46h52.14v15.73h-69.43v-99.19zM663.95 245.13v41.8h-17.29v-99.19h17.29v41.23h47.61v-41.23h17.29v99.19h-17.29v-41.8h-47.61z"></path><path class="st0" d="M860.33 194.82h-56.36v38.37h50.38v11.05h-50.38v46.82h-10.5V183.61h66.86v11.21zM972.65 244.12c2.64 43.55-40.6 62.33-66.79 35.69-17.64-17.85-8.61-73.43-10.7-97.24h10.5v61.71c-.14 21.9 9.55 36.23 28.45 36.22 18.4-.1 28.25-13.56 28.05-35.46v-62.47h10.5v61.55zM1077.52 291.24l-26.98-41.75h-26.59v41.75h-10.5V183.79c16.52 1.6 51.29-5.41 64.47 8.83 18.44 17.42 7.14 52.71-16.08 54.75l28.58 43.87h-12.9zm-7.19-90.62c-8.26-8.92-35.41-4.72-46.37-5.62v43.75c7.18-.47 31.8 1.28 38.25-1.54 14.22-3.3 19.7-26.48 8.12-36.59zM1181.35 269.83l-45.61-66.88v88.11h-10.23V183.61h9.84l58.62 86.11v-86.11h10.24v107.45h-8.37l-14.49-21.23M1257.9 183.61v107.45h-10.5V183.61h10.5zM1336.19 291.06h-10.5v-96.24h-31.24v-11.21h72.98v11.21h-31.24v96.24zM1479.22 244.12c2.64 43.55-40.6 62.33-66.79 35.69-17.64-17.85-8.62-73.43-10.7-97.24h10.5v61.71c-.14 21.9 9.55 36.23 28.45 36.22 18.4-.1 28.25-13.56 28.05-35.46v-62.47h10.5v61.55zM1584.09 291.24l-26.98-41.75h-26.59v41.75h-10.5V183.79c16.52 1.6 51.29-5.41 64.47 8.83 18.44 17.42 7.14 52.71-16.08 54.75l28.58 43.87h-12.9zm-7.19-90.62c-8.26-8.92-35.41-4.72-46.37-5.62v43.75c7.18-.47 31.8 1.28 38.25-1.54 14.22-3.3 19.7-26.48 8.12-36.59zM1699.34 194.66h-56.76v36.69h50.78v11.05h-50.78v37.61H1700v11.05h-67.92V183.61h67.26v11.05z"></path></svg>
+  </div>
+
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5j000005Ji1B" 
+        method="POST" class="webform">
+
+    <!-- Salesforce required hidden fields -->
+    <input type="hidden" name="oid" value="00D5j000005Ji1B">
+    <input type="hidden" name="retURL" value="https://slh.com.au/pages/contact-us">
+    <input type="hidden" name="lead_source" value="Website">
+
+    <!-- First Name -->
+    <label for="first_name">First Name</label>
+    <input id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+    <!-- Last Name -->
+    <label for="last_name">Last Name <span class="required">*</span></label>
+    <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required /><br>
+
+    <!-- Email -->
+    <label for="email">Email <span class="required">*</span></label>
+    <input id="email" maxlength="80" name="email" size="20" type="email" required /><br>
+
+    <!-- Phone -->
+    <label for="phone">Phone</label>
+    <input id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+    <!-- Company -->
+    <label for="company">Company</label>
+    <input id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+    <!-- Subject / Enquiry Type (custom field example) -->
+    <label for="00NXXXXXXX">Enquiry Type <span class="required">*</span></label>
+    <select id="00NXXXXXXX" name="00NXXXXXXX" required>
+      <option value="">--Select--</option>
+      <option value="Project Enquiry">General Enquiry</option>
+      <option value="Product Information">Product Information</option>
+      <option value="Wholesale Enquiry">Wholesale Enquiry</option>
+      <option value="Order Support">Order Support</option>
+    </select><br>
+
+    <!-- Message -->
+    <label for="description">Message</label>
+    <textarea name="description" rows="5"></textarea><br>
+
+    <!-- Submit -->
+    <input type="submit" name="submit" value="Submit Enquiry">
+
+  </form>
+</div>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  CSS Styling -->
+<!--  ----------------------------------------------------------------------  -->
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .webform {
+    font-family: Arial, sans-serif;
+    color: #2a2a2a;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: #fafafa;
+    text-align: left;
+  }
+
+  .webform label {
+    display: block;
+    margin: 8px 0 4px;
+    font-weight: bold;
+  }
+
+  .webform input[type="text"],
+  .webform input[type="email"],
+  .webform select,
+  .webform textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .webform input[type="submit"] {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .webform input[type="submit"]:hover {
+    background-color: #444;
+  }
+
+  .required {
+    color: #c00;
+  }
+</style>
